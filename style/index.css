@@ -37,7 +37,7 @@ nav ul li a{
     text-decoration: none;
 }
 .burger{
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -162,4 +162,19 @@ main h3 {
 footer {
 }
 footer > a {
+}
+@media (max-width:768px) {
+.burger{
+    display: flex;
+    
+}
+.unti-burger{
+    display: none;
+}
+#charts {
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+    
 }
