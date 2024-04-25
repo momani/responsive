@@ -2,8 +2,8 @@ html {
     --color-gray-1:rgb(200, 200, 200);
     --color-gray-2:rgb(180, 180, 180);
     --color-gray-3:rgb(150, 150, 150);
-    --color-gray-4:rgb(100, 100, 100);
-    --color-zain-1:rgb(214, 20, 100);
+    --color-gray-4:rgb(50, 100, 100);
+    --color-zain-1:rgb(161, 71, 108);
 }
 body{
     background-color: var(--color-gray-2);
@@ -36,6 +36,90 @@ nav ul li {
 nav ul li a{
     text-decoration: none;
 }
+.burger{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.burger li{
+    width: 30px;
+    height: 5px;
+    padding: 0;
+    margin: 1px;
+    background-color: var(--color-gray-4);
+    border-radius: 1px;
+}
+
+#aside{
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--color-zain-1);
+    display: none;
+}
+#drawer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#drawer ul{
+    width: 100%;
+    height: 100%;
+    margin: 3rem;
+
+
+}
+#drawer li{
+    font-size: 3rem;
+    margin: 3rem;
+    list-style: none;
+    font-weight: bold;
+}
+#drawer li a{
+    text-decoration: none;
+    color: var(--color-gray-4);
+}
+
+
+#aside header{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+     flex-direction: row; 
+     height: 3rem;
+
+}
+
+
+#aside-burger{display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#aside-burger li{
+    width: 30px;
+    height: 5px;
+    padding: 0;
+    margin: 1px;
+    background-color: var(--color-gray-4);
+    border-radius: 1px;
+}
+#aside:target{
+    display: block;
+
+   
+}
+
+
 main {
 }
 main h3 {
